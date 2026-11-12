@@ -1,36 +1,41 @@
 {% load static %}
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>google</title>
-    <link rel="stylesheet" href="{% static 'css/home.css' %}">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Google</title>
+  <link rel="stylesheet" href="{% static 'css/home.css' %}">
+  <script src="{% static 'js/home.js' %}" defer></script>
 </head>
 <body>
-    <header class="topbar">
-        <nav class="topbar-left">
-            <a href="https://about.google/">About</a>
-            <a href="https://store.google.com">Store</a>
-        </nav>
 
-        <nav class="topbar-right">
-            <a href="https://mail.google.com/">Gmail</a>
-            <a href="https://www.google.com/imghp">Images</a>
+  
+  <header class="topbar">
+    <nav class="topbar-left">
+      <a href="https://about.google/">About</a>
+      <a href="https://store.google.com/">Store</a>
+    </nav>
 
-            <button class="icon-btn" aria-label="Google apps">
-                <svg viewbox="0 0 24 24" width="'24" height="24" fill="#5f6368">
-                    <circle cx="5" cy="5" r="2"/><circle cx="12" cy="5" r="2"/><circle cx="19" cy="5" r="2"/>
-                    <circle cx="5" cy="12" r="2"/><circle cx="12" cy="12" r="2"/><circle cx="19" cy="12" r="2"/>
-                    <circle cx="5" cy="19" r="2"/><circle cx="12" cy="19" r="2"/><circle cx="19" cy="19" r="2"/>
-                </svg>
-            </button>
+    <nav class="topbar-right">
+      <a href="https://mail.google.com/">Gmail</a>
+      <a href="https://www.google.com/imghp">Images</a>
 
-            <a class="sign-in" href="https://accounts.google.com/">Sign in</a>
-        </nav>
-    </header>
+      <button class="icon-btn" aria-label="Google apps">
+        <svg viewBox="0 0 24 24" width="24" height="24" fill="#5f6368">
+          <circle cx="5" cy="5" r="2"/><circle cx="12" cy="5" r="2"/><circle cx="19" cy="5" r="2"/>
+          <circle cx="5" cy="12" r="2"/><circle cx="12" cy="12" r="2"/><circle cx="19" cy="12" r="2"/>
+          <circle cx="5" cy="19" r="2"/><circle cx="12" cy="19" r="2"/><circle cx="19" cy="19" r="2"/>
+        </svg>
+      </button>
 
-    <main class="main">
+      <a class="sign-in" href="https://accounts.google.com/">Sign in</a>
+    </nav>
+  </header>
+
+  
+  <main class="main">
     <h1 class="logo" aria-label="Google">
       <span class="g-blue">G</span><span class="g-red">o</span><span class="g-yellow">o</span><span class="g-blue">g</span><span class="g-green">l</span><span class="g-red">e</span>
     </h1>
@@ -53,13 +58,29 @@
 
       <div class="buttons">
         <button type="submit">Google Search</button>
-        <button type="submit" name="btnI" value="I'm Feeling Lucky">I'm Feeling Lucky</button>
+        <button type="button" id="lucky-btn">I'm Feeling Lucky</button>
       </div>
     </form>
   </main>
+
+  
+  <footer class="footer">
+    <div class="footer-top">India</div>
+
+    <div class="footer-bottom">
+      <nav class="footer-left">
+        <a href="https://ads.google.com/">Advertising</a>
+        <a href="https://www.google.com/services/">Business</a>
+        <a href="https://google.com/search/howsearchworks/">How Search works</a>
+      </nav>
+
+      <nav class="footer-right">
+        <a href="https://policies.google.com/privacy">Privacy</a>
+        <a href="https://policies.google.com/terms">Terms</a>
+        <a href="https://www.google.com/preferences">Settings</a>
+      </nav>
+    </div>
+  </footer>
+
 </body>
-
-
-
-
 </html>
